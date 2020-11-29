@@ -8,9 +8,10 @@ public class Dog {
     private int numVacunas;
     private String UltimaVacuna;
 
-    public Dog() {}
+    public Dog() {
+    }
 
-    public Dog (String nom, int edad, String raza, boolean pedigree, int numVacunas, String UltimaVacuna) {
+    public Dog(String nom, int edad, String raza, boolean pedigree, int numVacunas, String UltimaVacuna) {
         this.nom = nom;
         this.edad = edad;
         this.raza = raza;
@@ -76,9 +77,8 @@ public class Dog {
         System.out.println("Ultima Vacuna: " + this.UltimaVacuna);
     }
 
-        public void NuevaVacuna(String UltimaVacuna) {
+    public void NuevaVacuna(String UltimaVacuna) {
         this.numVacunas++;
         this.UltimaVacuna = UltimaVacuna;
     }
 }
-
